@@ -1,12 +1,10 @@
 #
+# modified from https://github.com/transcriptic/docker-postgres who:
 # modified from the example Dockerfile from
 # http://docs.docker.io/en/latest/examples/postgresql_service/
-#
-# - fixed locale to UTF8 instead of C
-#
 
-FROM ubuntu
-MAINTAINER jeremy@transcriptic.com
+FROM ubuntu:12.04
+MAINTAINER danielc@pobox.com
 
 # Add the PostgreSQL PGP key to verify their Debian packages.
 # It should be the same key as https://www.postgresql.org/media/keys/ACCC4CF8.asc 
